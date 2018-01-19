@@ -17,9 +17,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		080BED8620112BB800613E3A /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		080BED8620112BB800613E3A /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		087753C7200E7FA8002D3FD3 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		087753C9200E7FCB002D3FD3 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		08E14C862011896D00811807 /* VSACNative.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = VSACNative.entitlements; sourceTree = "<group>"; };
 		08E4EDA120017C4C005CE141 /* VSACNative.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VSACNative.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		08E4EDA420017C4C005CE141 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		08E4EDA620017C4C005CE141 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -64,6 +65,7 @@
 		08E4EDA320017C4C005CE141 /* VSACNative */ = {
 			isa = PBXGroup;
 			children = (
+				08E14C862011896D00811807 /* VSACNative.entitlements */,
 				08E4EDA420017C4C005CE141 /* AppDelegate.swift */,
 				08E4EDA620017C4C005CE141 /* ViewController.swift */,
 				08E4EDAB20017C4C005CE141 /* Assets.xcassets */,
@@ -127,6 +129,14 @@
 					08E4EDA020017C4C005CE141 = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Manual;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -338,6 +348,7 @@
 			baseConfigurationReference = EE10098038E12933208CCB8A /* Pods-VSACNative.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = VSACNative/VSACNative.entitlements;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 2EJYC2GJ6L;
@@ -357,6 +368,7 @@
 			baseConfigurationReference = 2F1ECBFDB113ED15E691323D /* Pods-VSACNative.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = VSACNative/VSACNative.entitlements;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 2EJYC2GJ6L;

@@ -10,6 +10,7 @@ import UIKit
 import AppCenter
 import AppCenterAnalytics
 import AppCenterCrashes
+import AppCenterPush
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -20,7 +21,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         
-        MSAppCenter.start("171aae33-bc8e-48bf-837d-bbe2d0c2a02f", withServices: [MSAnalytics.self, MSCrashes.self])
+        MSAppCenter.start("171aae33-bc8e-48bf-837d-bbe2d0c2a02f", withServices: [MSAnalytics.self, MSCrashes.self, MSPush.self])
         return true
     }
 
