@@ -11,6 +11,7 @@ import android.view.MenuItem;
 import com.microsoft.appcenter.AppCenter;
 import com.microsoft.appcenter.analytics.Analytics;
 import com.microsoft.appcenter.crashes.Crashes;
+import com.microsoft.appcenter.push.Push;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -19,7 +20,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        AppCenter.start(getApplication(), "da8ef04f-ab2d-4d47-b593-845e0bc32c7e", Analytics.class, Crashes.class);
+        Push.setSenderId("193976992430");
+        AppCenter.start(getApplication(), "da8ef04f-ab2d-4d47-b593-845e0bc32c7e", Analytics.class, Crashes.class, Push.class);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 

@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="com.microsoft.appcenter:appcenter-push-1.1.0">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/appcenter-push-1.1.0.aar/0c7f4aab15a04cc3a76248d31544c7cf/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/appcenter-push-1.1.0.aar/0c7f4aab15a04cc3a76248d31544c7cf/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.microsoft.appcenter/appcenter-push/1.1.0/52e1a16031304389b7200d221fe20dec8026912e/appcenter-push-1.1.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
